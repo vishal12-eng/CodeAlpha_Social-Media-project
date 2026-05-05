@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha SocialMedia | Feed</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="feed">
+    <div id="navbar-root"></div>
+
+    <main class="section">
+      <div class="container feed-layout">
+        <section class="main-feed">
+          <div class="section-header split">
+            <div>
+              <span class="eyebrow">Your feed</span>
+              <h1>Latest from people you follow</h1>
+            </div>
+            <div class="feed-actions">
+              <button class="btn btn-secondary" id="load-latest-posts" type="button">All Posts</button>
+              <button class="btn btn-primary" id="load-home-feed" type="button">Following Feed</button>
+            </div>
+          </div>
+          <div id="feed-root" class="stack"></div>
+        </section>
+
+        <aside class="side-panel">
+          <div class="panel-card">
+            <h3>Search users</h3>
+            <form id="search-form" class="stack compact">
+              <input type="search" id="user-search-input" placeholder="Search by name or email" />
+              <button type="submit" class="btn btn-secondary">Search</button>
+            </form>
+            <div id="search-results-root" class="stack compact"></div>
+          </div>
+
+          <div class="panel-card">
+            <h3>Trending posts</h3>
+            <div id="trending-root" class="stack compact"></div>
+          </div>
+
+          <div class="panel-card">
+            <h3>Suggested users</h3>
+            <div id="suggested-users-root" class="stack compact"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <div id="footer-root"></div>
+    <script src="js/auth.js"></script>
+    <script src="js/feed.js"></script>
+  </body>
+</html>

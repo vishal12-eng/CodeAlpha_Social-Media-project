@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha SocialMedia | Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="register">
+    <div id="navbar-root"></div>
+
+    <main class="auth-page">
+      <div class="auth-card">
+        <span class="eyebrow">Join the platform</span>
+        <h1>Create your account</h1>
+        <form id="register-form" class="stack">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Minimum 6 characters" required />
+          </label>
+          <button type="submit" class="btn btn-primary full-width">Create Account</button>
+        </form>
+        <p class="muted-text">Already registered? <a href="login.html">Login</a></p>
+      </div>
+    </main>
+
+    <div id="footer-root"></div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

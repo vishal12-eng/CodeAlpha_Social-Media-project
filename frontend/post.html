@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha SocialMedia | Create Post</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="post">
+    <div id="navbar-root"></div>
+
+    <main class="section">
+      <div class="container post-layout">
+        <section class="panel-card">
+          <span class="eyebrow">Share update</span>
+          <h1>Create a new post</h1>
+          <form id="create-post-form" class="stack">
+            <label>
+              Post content
+              <textarea
+                name="content"
+                rows="6"
+                maxlength="1000"
+                placeholder="What do you want to share today?"
+                required
+              ></textarea>
+            </label>
+            <label>
+              Image URL
+              <input type="url" name="image" placeholder="Optional image URL" />
+            </label>
+            <button type="submit" class="btn btn-primary">Publish Post</button>
+          </form>
+        </section>
+
+        <aside class="panel-card">
+          <h3>Posting tips</h3>
+          <ul class="tips-list">
+            <li>Keep your post clear and useful.</li>
+            <li>Add an image URL for more visual impact.</li>
+            <li>Use your profile to help others recognize you.</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <div id="footer-root"></div>
+    <script src="js/auth.js"></script>
+    <script src="js/post.js"></script>
+  </body>
+</html>

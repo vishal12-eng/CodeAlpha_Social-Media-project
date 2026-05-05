@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha SocialMedia | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <div id="navbar-root"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Social storytelling</span>
+            <h1>Build your community, share ideas, and discover what matters now.</h1>
+            <p>
+              CodeAlpha SocialMedia is a clean, full-stack social platform with profiles, feeds,
+              likes, comments, follows, search, and smart recommendations.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="feed.html">Open Feed</a>
+              <a class="btn btn-secondary" href="post.html">Create Post</a>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="stat-card">
+              <strong>JWT Auth</strong>
+              <span>Secure login and protected APIs</span>
+            </div>
+            <div class="stat-card">
+              <strong>Live Social Graph</strong>
+              <span>Follow users and personalize your feed</span>
+            </div>
+            <div class="stat-card">
+              <strong>Responsive UI</strong>
+              <span>Designed for desktop and mobile browsing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Latest conversations</span>
+              <h2>Recent posts from the platform</h2>
+            </div>
+            <a class="text-link" href="feed.html">Go to feed</a>
+          </div>
+          <div id="latest-posts-root" class="posts-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-root"></div>
+    <script src="js/auth.js"></script>
+    <script src="js/feed.js"></script>
+  </body>
+</html>
